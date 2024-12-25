@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(200, 221, 226);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #a6cee5;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        fieldset {
+            border:aqua;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 10px 0;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        input[type="radio"] {
+            width: auto;
+        }
+        .submit{
+            font-size: medium;
+            border: 1px solid #1b1919;
+            background-color: #da6c6c;
+            display: block;
+            font-weight: bold;
+        }
+
+       
+        @media (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+
+            legend {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>SignUp Form</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label >First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Khushi" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="G N" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >College</label>
+                        <input type="text" name="college" id="college" placeholder="XYZ" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >Email</label>
+                        <input type="email" name="email" id="email" placeholder="xyz@gmail.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >Re-enter Password</label>
+                        <input type="password"  name="re-password" id="re-password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender</label>
+                        <input type="radio" name="Gender" value="F" required> Female
+                        <input type="radio" name="Gender" value="M" required> Male
+                        <input type="radio" name="Gender" value="O" required> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mod">Mode of Delivery</label>
+                        <select id="mod">
+                            <option>Online</option>
+                            <option>Offline</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" class="submit">Submit</button>
+                    </td>
+                </tr>
+               
+            </table>
+           
+        </fieldset>
+    </form>
+</body>
+</html>
